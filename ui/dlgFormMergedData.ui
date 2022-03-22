@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>340</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pb_cancel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>335</y>
+     <width>85</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Отменить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_run">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>335</y>
+     <width>85</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Выполнить </string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>15</y>
+     <width>306</width>
+     <height>76</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Исходная директория </string>
+   </property>
+   <widget class="QLineEdit" name="ln_source_folder">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>20</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_select_folder">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>20</y>
+      <width>26</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>54</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Формат</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmb_format_source">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>45</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>mif</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tab</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>316</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Параметры</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>15</y>
+      <width>301</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Проекция</string>
+    </property>
+    <widget class="QLabel" name="label_out_prj">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>15</y>
+       <width>246</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pn_select_out_prj">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>10</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QCheckBox" name="ch_prj_first">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>65</y>
+      <width>281</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Использовать проекцию исходных данных</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>105</y>
+     <width>306</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Результирущий файл</string>
+   </property>
+   <widget class="QPushButton" name="pb_select_out_file">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>20</y>
+      <width>26</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ln_out_file">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>20</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QProgressBar" name="pr_bar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>275</y>
+     <width>311</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
