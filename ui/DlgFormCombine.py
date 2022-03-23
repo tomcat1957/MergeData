@@ -115,7 +115,7 @@ class dlgFromCombine(QWidget):
         if len(file_out)>0 and os.path.isdir(path_out):
             isOutFileValid=True
         isStatusRun=isOutFileValid and isSourceFolderValid
-        if len(self.__list_source_file)==0:
+        if self.__list_source_file is None or len(self.__list_source_file)==0:
             isStatusRun=False
         self.__ui.pb_run.setEnabled(isStatusRun)
         self.__ui.ch_prj_first.setEnabled(isStatusRun)
